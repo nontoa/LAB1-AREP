@@ -17,7 +17,7 @@ git clone https://github.com/nontoa/LAB1-AREP.git
 
 * [Maven](https://maven.apache.org/) - Gestión de dependencias
 
-### Código para calculos de la media y la desviación estandar.
+### Código para cálculos de la media y la desviación estandar.
 
 ```java
 package edu.escuelaing.arep.ASE.app;
@@ -47,17 +47,14 @@ public class App {
         try {
             archivo = new File("C:\\Users\\Nicolas\\Downloads\\Lab1-Arep\\src\\main\\java\\edu\\escuelaing\\arep\\ASE\\app\\prueba.txt");
             fr = new FileReader(archivo);
-            br = new BufferedReader(fr);
-            //System.out.println("Leyendo contenido");
+            br = new BufferedReader(fr);            
             String linea;
             ArrayList<String> c1 = new ArrayList<String>();
             ArrayList<String> c2 = new ArrayList<String>();
             while ((linea = br.readLine()) != null) {                
-                String[] parts = linea.split(" ");         
-                //System.out.println(parts[1]);                
+                String[] parts = linea.split(" ");                                        
                 c1.add(parts[0]);
-                c2.add(parts[1]);
-                //System.out.println(linea);
+                c2.add(parts[1]);                
             }
             operation(c1,c2);
 

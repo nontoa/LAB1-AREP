@@ -6,8 +6,8 @@
 package edu.escuelaing.arep.ASE.app;
 
 /**
- *
- * @author 2137516
+ * Esta clase representa el nodo del LinkedList.
+ * @author Nicolas Nontoa.
  */
 class Node<T> {
 
@@ -15,6 +15,12 @@ class Node<T> {
     public Node siguiente;
     public T datos;
 
+    /**
+     * Constructor de la clase
+     * @param a Nodo anterior.
+     * @param s Nodo siguiente.
+     * @param d Valor del nuevo nodo.
+     */
     public Node(Node a, Node s, T d) {
         this.anterior = a;
         this.siguiente = s;

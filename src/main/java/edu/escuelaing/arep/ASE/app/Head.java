@@ -6,14 +6,19 @@
 package edu.escuelaing.arep.ASE.app;
 
 /**
- *
- * @author 2137516
+ * Esta clase representa la cabeza del LinkedList.
+ * @author Nicolas Nontoa.
  */
 class Head {
     
     public Node primero;
     public Node ultimo;
     
+    /**
+     * Constructor de la clase.
+     * @param p Valor para el primer nodo.
+     * @param u Valor para el ultimo nodo.
+     */
     public Head(Node p,Node u){
         this.primero=p;
         this.ultimo=u;

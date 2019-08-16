@@ -179,8 +179,98 @@ public class LinkedList<T> {
 
 }
 ```
+### Clase Node:
 
+```java
+package edu.escuelaing.arep.ASE.app;
 
+/**
+ * Esta clase representa el nodo del LinkedList.
+ * @author Nicolas Nontoa.
+ */
+class Node<T> {
+
+    public Node anterior;    
+    public Node siguiente;
+    public T datos;
+
+    /**
+     * Constructor de la clase
+     * @param a Nodo anterior.
+     * @param s Nodo siguiente.
+     * @param d Valor del nuevo nodo.
+     */
+    public Node(Node a, Node s, T d) {
+        this.anterior = a;
+        this.siguiente = s;
+        this.datos = d;
+    }
+    
+    public Node getAnterior() {
+        return anterior;
+    }
+
+    public void setAnterior(Node anterior) {
+        this.anterior = anterior;
+    }
+
+    public Node getSiguiente() {
+        return siguiente;
+    }
+
+    public void setSiguiente(Node siguiente) {
+        this.siguiente = siguiente;
+    }
+
+    public T getDatos() {
+        return datos;
+    }
+
+    public void setDatos(T datos) {
+        this.datos = datos;
+    }
+}
+```
+### Clase Head:
+```java
+package edu.escuelaing.arep.ASE.app;
+
+/**
+ * Esta clase representa la cabeza del LinkedList.
+ * @author Nicolas Nontoa.
+ */
+class Head {
+    
+    public Node primero;
+    public Node ultimo;
+    
+    /**
+     * Constructor de la clase.
+     * @param p Valor para el primer nodo.
+     * @param u Valor para el ultimo nodo.
+     */
+    public Head(Node p,Node u){
+        this.primero=p;
+        this.ultimo=u;
+    }
+
+    public Node getPrimero() {
+        return primero;
+    }
+
+    public void setPrimero(Node primero) {
+        this.primero = primero;
+    }
+
+    public Node getUltimo() {
+        return ultimo;
+    }
+
+    public void setUltimo(Node ultimo) {
+        this.ultimo = ultimo;
+    } 
+}
+```
 
 ## Autor
 

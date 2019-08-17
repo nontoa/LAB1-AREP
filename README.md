@@ -17,6 +17,24 @@ git clone https://github.com/nontoa/LAB1-AREP.git
 
 * [Maven](https://maven.apache.org/) - Gestión de dependencias
 
+## Descripción del programa:
+
+### Formulas utilizadas para los calculos:
+
+
+
+#### Desviación estandar:
+
+![Screenshot](images/Desviacion.PNG)
+
+#### Media:
+
+![Screenshot](images/Media.PNG)
+
+### Diagrama de la implementación:
+
+![Screenshot](images/Diagrama.PNG)
+
 ## Código encargado para operaciones lógicas.
 
 ```java
@@ -271,23 +289,7 @@ class Head {
     } 
 }
 ```
-## Descripción del programa:
 
-### Formulas utilizadas para los calculos:
-
-
-
-#### Desviación estandar:
-
-![Screenshot](images/Desviacion.PNG)
-
-#### Media:
-
-![Screenshot](images/Media.PNG)
-
-### Diagrama de la implementación:
-
-![Screenshot](images/Diagrama.PNG)
 
 ## Autor
 
